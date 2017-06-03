@@ -1,0 +1,26 @@
+{
+  "name": "hedron-site",
+  "version": "1.0.0",
+  "description": "frontend website for the hedron grid system",
+  "main": "index.js",
+  "repository": "https://github.com/jsbros/hedron-site",
+  "author": "Garet McKinley",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.1.4",
+    "base-64": "^0.1.0",
+    "hedron": "next",
+    "next": "beta",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-live": "^1.5.3",
+    "react-router-dom": "^4.1.1",
+    "styled-components": "^2.0.0"
+  }
+}
