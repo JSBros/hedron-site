@@ -2742,6 +2742,17 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-alive@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-alive/-/react-alive-1.6.0.tgz#07354377e96603c99915653028f7162bc84fc73c"
+  dependencies:
+    buble "^0.15.2"
+    core-js "^2.4.1"
+    dom-iterator "^0.3.0"
+    prismjs "^1.6.0"
+    prop-types "^15.5.8"
+    unescape "^0.2.0"
+
 react-deep-force-update@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.0.1.tgz#4f7f6c12c3e7de42f345992a3c518236fa1ecad3"
@@ -2765,17 +2776,6 @@ react-hot-loader@3.0.0-beta.6:
     react-proxy "^3.0.0-alpha.0"
     redbox-react "^1.2.5"
     source-map "^0.4.4"
-
-react-live@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/react-live/-/react-live-1.5.3.tgz#57db04f21abdc4f2eaa7b942424127c9c48b4b80"
-  dependencies:
-    buble "^0.15.2"
-    core-js "^2.4.1"
-    dom-iterator "^0.3.0"
-    prismjs "^1.6.0"
-    prop-types "^15.5.8"
-    unescape "^0.2.0"
 
 react-proxy@^3.0.0-alpha.0:
   version "3.0.0-alpha.1"

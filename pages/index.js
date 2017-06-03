@@ -4,7 +4,7 @@ import {
   LiveEditor,
   LiveError,
   LivePreview
-} from 'react-live'
+} from 'react-alive'
 import { LayoutProvider, Section, Container, Box } from 'hedron';
 import base64 from 'base-64';
 import '../global';
