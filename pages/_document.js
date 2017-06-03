@@ -10,7 +10,7 @@ export default class extends Document {
     return (
       <html lang="en">
         <Head>
-          <title>My page</title>
+          <title>Hedron</title>
           {styleTags}
         </Head>
         <body>
