@@ -52,11 +52,11 @@ class Editor extends React.PureComponent {
       >
         <LayoutProvider gutter="0px">
           <Section fluid>
-            <Container height="100vh">
-              <Box grow={1} width="50%">
+            <Container height="100vh" wrap>
+              <Box grow width={{ md: "50%" }} height={{ xs: "50vh", md: "100vh" }}>
                 <LiveEditor />
               </Box>
-              <Box grow={1} width="50%">
+              <Box grow width={{ md: "50%" }} height={{ xs: "50vh", md: "100vh" }}>
                 <LiveError />
                 <LivePreview />
               </Box>
