@@ -10,13 +10,15 @@
     "dev": "next",
     "build": "next build",
     "start": "next start -p $PORT",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "format": "prettier --single-quote --trailing-comma es5 --write components/**/*.js data/**/*.js pages/**/*.js utils/**/*.js"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.1.4",
     "base-64": "^0.1.0",
     "hedron": "next",
     "next": "beta",
+    "prettier": "^1.4.2",
     "react": "^15.5.4",
     "react-alive": "^1.6.0",
     "react-dom": "^15.5.4",

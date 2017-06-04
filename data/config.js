@@ -1,4 +1,1 @@
-export const examples = [
-  'home',
-  'responsive'
-];
+export const examples = ['home', 'responsive'];

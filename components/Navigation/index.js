@@ -3,12 +3,11 @@ import { Box } from 'hedron';
 import Wrapper from './Wrapper';
 import Switcher from 'components/Switcher';
 
-const Navigation = (props) => (
+const Navigation = props =>
   <Wrapper>
-    <Box style={{ overflow: "visible" }}>
+    <Box style={{ overflow: 'visible' }}>
       <Switcher />
     </Box>
-  </Wrapper>
-);
+  </Wrapper>;
 
 export default Navigation;

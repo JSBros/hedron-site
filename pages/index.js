@@ -1,10 +1,5 @@
 import Router from 'next/router';
-import {
-  LiveProvider,
-  LiveEditor,
-  LiveError,
-  LivePreview
-} from 'react-alive'
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-alive';
 import { ThemeProvider } from 'styled-components';
 import { LayoutProvider, Section, Container, Box } from 'hedron';
 
@@ -18,7 +13,7 @@ class Editor extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      code: this.fetchCodeFromQuery() || README
+      code: this.fetchCodeFromQuery() || README,
     };
   }
   componentWillReceiveProps(nextProps) {
@@ -46,10 +41,10 @@ class Editor extends React.PureComponent {
             <Section fluid>
               <Container direction="vertical" height="100vh">
                 <Container wrap grow>
-                  <Box grow width={{ md: "50%" }}>
+                  <Box grow width={{ md: '50%' }}>
                     <LiveEditor />
                   </Box>
-                  <Box grow width={{ md: "50%" }}>
+                  <Box grow width={{ md: '50%' }}>
                     <LiveError />
                     <LivePreview />
                   </Box>

@@ -7,10 +7,10 @@ import Wrapper from './Wrapper';
 
 const onChange = example => {
   const newExample = require(`../../examples/${example}`).default;
- Router.push(`/?code=${encode(newExample)}`);
-}
+  Router.push(`/?code=${encode(newExample)}`);
+};
 
-const Switcher = ({ ...props }) => (
+const Switcher = ({ ...props }) =>
   <Wrapper>
     <Dropdown
       options={examples}
@@ -18,7 +18,6 @@ const Switcher = ({ ...props }) => (
       placeholder="Navigate"
       {...props}
     />
-  </Wrapper>
-);
+  </Wrapper>;
 
 export default Switcher;
