@@ -5,36 +5,46 @@ import { LayoutProvider, Section, Container, Box } from 'hedron';
 
 import 'data/global';
 import theme from 'data/theme';
-import { encode, decode } from 'utils/router';
+import { encode, decode, loader } from 'utils/router';
 import Navigation from 'components/Navigation';
 import README from 'examples/home';
 
 class Editor extends React.PureComponent {
   constructor(props) {
     super(props);
+    const { query: { code, example } } = props.url;
     this.state = {
-      code: this.fetchCodeFromQuery() || README,
+      code: (code && decode(code)) || README,
+      example,
     };
   }
+
   componentWillReceiveProps(nextProps) {
     const { query } = nextProps.url;
     if (query !== this.props.url.query) {
-      this.setState({ code: decode(query.code) });
+      this.setState({
+        code: query.code && decode(query.code),
+        example: query.example,
+      });
     }
   }
-  fetchCodeFromQuery() {
-    const { query } = this.props.url;
-    return query.code ? decode(query.code) : undefined;
+
+  fetchEditorCode() {
+    return (
+      (this.state.example && loader(this.state.example)) || this.state.code
+    );
   }
+
   updateQuery(fromCode) {
     Router.push(`/?code=${encode(fromCode)}`);
   }
+
   render() {
     return (
       <ThemeProvider theme={theme}>
         <LiveProvider
           scope={{ LayoutProvider, Section, Container, Box }}
-          code={this.state.code}
+          code={this.fetchEditorCode()}
           onUpdate={this.updateQuery}
         >
           <LayoutProvider gutter="0px">
@@ -49,7 +59,7 @@ class Editor extends React.PureComponent {
                     <LivePreview />
                   </Box>
                 </Container>
-                <Navigation />
+                <Navigation switcherProps={{ value: this.state.example }} />
               </Container>
             </Section>
           </LayoutProvider>

@@ -3,10 +3,10 @@ import { Box } from 'hedron';
 import Wrapper from './Wrapper';
 import Switcher from 'components/Switcher';
 
-const Navigation = props =>
-  <Wrapper>
+const Navigation = ({ switcherProps, ...props }) =>
+  <Wrapper {...props}>
     <Box style={{ overflow: 'visible' }}>
-      <Switcher />
+      <Switcher {...switcherProps} />
     </Box>
   </Wrapper>;
 

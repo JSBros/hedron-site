@@ -5,16 +5,12 @@ import { encode } from 'utils/router';
 import { examples } from 'data/config';
 import Wrapper from './Wrapper';
 
-const onChange = example => {
-  const newExample = require(`../../examples/${example}`).default;
-  Router.push(`/?code=${encode(newExample)}`);
-};
-
 const Switcher = ({ ...props }) =>
   <Wrapper>
     <Dropdown
       options={examples}
-      onChange={e => onChange(e.value)}
+      onChange={e =>
+        Router.push({ pathname: '/', query: { example: e.value } })}
       placeholder="Navigate"
       {...props}
     />
