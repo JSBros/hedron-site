@@ -21,7 +21,7 @@ const Wrapper = styled.div`
         border-radius: ${props.theme.button_radius};
       `}
       box-sizing: border-box;
-      cursor: default;
+      cursor: pointer;
       outline: none;
       padding: 8px 52px 8px 10px;
       transition: all 200ms ease;
@@ -43,10 +43,10 @@ const Wrapper = styled.div`
 
     .Dropdown-menu {
       ${props => `
-        background: ${props.theme.menun_background};
-        border: ${props.theme.menun_border};
-        color: ${props.theme.menun_foreground};
-        border-radius: ${props.theme.menun_radius};
+        background: ${props.theme.menu_background};
+        border: ${props.theme.menu_border};
+        color: ${props.theme.menu_foreground};
+        border-radius: ${props.theme.menu_radius};
         box-shadow: ${props.theme.menu_shadow};
       `}
       box-sizing: border-box;
@@ -63,13 +63,18 @@ const Wrapper = styled.div`
     .Dropdown-option {
       ${props => `
         background: ${props.theme.menu_background};
-        border: ${props.theme.menu_border};
+        border-bottom: ${props.theme.menu_border};
         color: ${props.theme.menu_foreground};
       `}
       box-sizing: border-box;
       cursor: pointer;
       display: block;
       padding: 8px 10px;
+      transition: all .15s ease-in;
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
 
     .Dropdown-option:last-child {
@@ -78,8 +83,10 @@ const Wrapper = styled.div`
     }
 
     .Dropdown-option:hover {
-      background-color: #f2f9fc;
-      color: #333;
+      ${props => `
+        background: ${props.theme.menu_hover_background};
+        color: ${props.theme.menu_hover_foreground};
+      `}
     }
 
     .Dropdown-option.is-selected {
