@@ -6,6 +6,8 @@ export default {
 
   button_background: '#2b2d31',
   button_foreground: '#fff',
+  button_hover_background: '#404247',
+  button_hover_foreground: '#fff',
   button_border: '1px solid rgba(255, 255, 255, 0.25)',
   button_radius: '3px',
 
