@@ -1,4 +1,6 @@
 export default {
+  error_background: '#A6004C',
+
   navbar_background: '#1D1F21',
   navbar_padding: '10px',
 

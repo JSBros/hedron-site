@@ -1724,8 +1724,8 @@ hawk@~3.1.3:
     sntp "1.x.x"
 
 hedron@next:
-  version "1.0.0-beta.5"
-  resolved "https://registry.yarnpkg.com/hedron/-/hedron-1.0.0-beta.5.tgz#e877eb07e5e819cdce817cd1b6881c61c53e8e6b"
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/hedron/-/hedron-1.0.0-beta.6.tgz#38ef49440c9ab31eae9f5e55c17863f81cf3ae7f"
 
 history@^4.5.1, history@^4.6.0:
   version "4.6.1"

@@ -1,4 +1,5 @@
 import { injectGlobal } from 'styled-components';
+import theme from 'data/theme';
 
 injectGlobal`
   body {
@@ -25,7 +26,7 @@ injectGlobal`
   }
 
   .react-live-error {
-    background: red;
+    background: ${theme.error_background};
     color: white;
     font-family: monospace;
     white-space: pre;
