@@ -2,7 +2,7 @@ import Router from 'next/router';
 import Dropdown from 'react-dropdown';
 import styled from 'styled-components';
 import { encode } from 'utils/router';
-import { examples } from 'config';
+import { examples } from 'data/config';
 import Wrapper from './Wrapper';
 
 const onChange = example => {

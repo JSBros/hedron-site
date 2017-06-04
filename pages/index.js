@@ -8,8 +8,8 @@ import {
 import { ThemeProvider } from 'styled-components';
 import { LayoutProvider, Section, Container, Box } from 'hedron';
 
-import 'global';
-import theme from 'theme';
+import 'data/global';
+import theme from 'data/theme';
 import { encode, decode } from 'utils/router';
 import Navigation from 'components/Navigation';
 import README from 'examples/home';
