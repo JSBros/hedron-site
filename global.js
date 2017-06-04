@@ -6,7 +6,7 @@ injectGlobal`
     font-family: sans-serif;
   }
   .inverted {
-    background-color: #1d1f27;
+    background-color: #1D1F21;
     color: white;
   }
 

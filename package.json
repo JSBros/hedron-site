@@ -18,8 +18,9 @@
     "hedron": "next",
     "next": "beta",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
     "react-alive": "^1.6.0",
+    "react-dom": "^15.5.4",
+    "react-dropdown": "^1.2.3",
     "react-router-dom": "^4.1.1",
     "styled-components": "^2.0.0"
   }
