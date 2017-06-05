@@ -13,7 +13,7 @@ const Navigation = ({ switcherProps, ...props }) =>
       </Box>
 
       {links.map((link, index) =>
-        <Box shift={index === 0 && 'auto'}>
+        <Box shift={index === 0 && 'auto'} key={index}>
           <Button href={link.url} target="_blank">{link.title}</Button>
         </Box>
       )}
